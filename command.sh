@@ -1,3 +1,5 @@
-rpm -ivh jenkins-2.282-1.1.noarch.rpm
+cp jenkins.repo /ect/yum.repos.d
+yum repolist
+yum install jenkins
 systemctl start jenkins
 systemctl enable jenkins
